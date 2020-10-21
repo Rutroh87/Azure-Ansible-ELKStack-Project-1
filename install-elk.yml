@@ -1,0 +1,41 @@
+---
+  - name: Configure Elk VM with Docker
+    hosts: elk
+    remote_user: Joe
+    become: true
+    tasks:
+      - name: Install apache httpd  (state=present is optional)
+        apt:
+           name: apache2
+           state: absent
+
+      - name: Use more memory
+        sysctl:
+          name: vm.max_map_count
+          value: "262144"
+          state: present
+          reload: yes
+
+      - name: Install docker.io
+        apt:
+          name: docker.io
+          update_cache: yes
+          state: present
+
+      - name: Install Python3-pip
+        apt:
+          name: python3-pip
+          state: present
+
+      - name: Install Docker using pip
+        pip:
+          name: docker
+          state: present
+
+      - name: Install ELK
+        docker_container:
+          name: elk
+          image: sebp/elk:761
+          state: started
+          restart_policy: always
+          published_ports:
