@@ -1,4 +1,4 @@
-# Azure-Ansible-Project-1
+# Azure-Ansible-ELKStack-Project-1
 Project 1 README 
 The files in this repository were used to configure the network depicted below.
 
