@@ -45,7 +45,7 @@ The configuration details of each machine may be found below.
 | Web 1    | Website DVWA      |10.0.0.6   |       Linux Ubuntu  18.04      |
 | Web 2    | Website DVWA      |10.0.0.8   |       Linux Ubuntu  18.04      |                  
 | Web 3    | Website DVWA      |10.0.0.12  |       Linux Ubuntu  18.04      |         
-| ElkSTACK | Kibana / Elastic  |10.1.0.4   |       Linux Ubuntu  18.04      |
+| ELKSTACK | Kibana / Elastic  |10.1.0.4   |       Linux Ubuntu  18.04      |
 
 ### Access Policies
 
