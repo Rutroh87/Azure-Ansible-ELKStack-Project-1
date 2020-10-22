@@ -30,9 +30,9 @@ A jump box is a secure computer that all admins first connect to before launchin
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system configurations.
 
-File beat - is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, File beat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+File beat - is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, File beat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash.
 
-Metric beat - is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
+Metric beat - is a lightweight shipper that you can install on the servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and sends them to the output that you specify, such as Elasticsearch or Logstash.
 
 (NOTE) 
 MetricBeat - Custom magnifying glass to your standards -- Circumstantial-- You must ask yourself, what is a normal Baseline in my enviroment?
@@ -74,7 +74,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-- Playbooks...these little YAML books allow anyone to run a list of important commands to install tools and containers. A pro is the ability to configure and manage such containers with playbooks...the downside however is that you must double check YAML configurations files to make sure there are NO SYNTAX ERRORS and all must be formatted correctly...if one thing is off, the whole playbook will not WORK PROPERLY.  
+- Playbooks...these little YAML books allow anyone to run a list of important commands to install tools and containers. A pro is the ability to configure and manage such containers with playbooks...the downside however is that you must double check YAML configurations files to make sure there are NO SYNTAX ERRORS and all must be formatted correctly...if one thing is off, the whole playbook will NOT WORK PROPERLY.  
 
 The playbook implements the following tasks:
 
