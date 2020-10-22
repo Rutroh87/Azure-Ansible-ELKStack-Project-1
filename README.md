@@ -117,6 +117,6 @@ SSH into the control node and follow the steps below:
 
 - Navigate to this site with your virtual machine's ip address to check that the ELK Server is running.
 
-- http:/<your ip>/app/kibana 
+- http:/yourip/app/kibana 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
