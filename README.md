@@ -109,9 +109,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-- Copy the Metricbeat and Filebeat configuration files to the Ansible Container.
+- Copy the Metricbeat and Filebeat playbook files to the Ansible Container.
 
-- Update and allow the files to include your IP addresses and other recommended settings given by Kibana 
+- Update and allow the files to include your containers and other recommended settings given by the playbooks 
 
 - Run the playbook, and navigate to the Elk Stack Virtual Machine to check that the installation worked as expected.
 
