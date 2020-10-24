@@ -2,7 +2,7 @@
 Project 1 README 
 The files in this repository were used to configure the network depicted below.
 
-https://drive.google.com/file/d/1_c_89ebYV7noHcIhEfzs9yT36h-YDa7G/view?usp=sharing
+https://github.com/Rutroh87/Azure-Ansible-ELKStack-Project-1/blob/main/Azure%20Diagram.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the README file may be used to install only certain pieces of it, such as Filebeat.
 
