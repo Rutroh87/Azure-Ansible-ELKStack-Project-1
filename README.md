@@ -119,4 +119,4 @@ SSH into the control node and follow the steps below:
 
 - http:/yourip/app/kibana 
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- Congrats! You have successfully finished ELKStack installment!
