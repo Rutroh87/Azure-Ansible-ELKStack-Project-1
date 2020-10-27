@@ -1,0 +1,35 @@
+---
+  - name: My dvwa playbook
+    hosts: webservers
+    become: true
+    tasks:
+    - name: Install apache httpd  (state=present is optional)
+      apt:
+        name: apache2
+        state: absent
+    - name: Install docker.io
+      apt:
+        name: docker.io
+        update_cache: yes
+        state: present
+    - name: Install Python3-pip
+      apt:
+        name: python3-pip
+        state: present
+    - name: Install Docker using pip
+      pip:
+        name: docker
+        state: present
+    - name: Install DVWA
+      docker_container:
+        name: dvwa
+        image: cyberxsecurity/dvwa
+        restart_policy: always
+        published_ports: 80:80
+        state: started
+    - name: Enable docker service on restart
+      systemd:
+        name: docker
+        enabled: yes
+
+
